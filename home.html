@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="text-center mb-4">Dashboard</h2>
+
+<div class="row text-center">
+
+<div class="col-md-6">
+<div class="card shadow p-4">
+<h4>Total Products</h4>
+<h2>{{ total_products }}</h2>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card shadow p-4">
+<h4>Total Sales</h4>
+<h2>{{ total_sales }}</h2>
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+
+<a href="/products/" class="btn btn-primary m-2">Manage Products</a>
+<a href="/sales/" class="btn btn-success m-2">View Sales</a>
+
+</div>
+
+{% endblock %}
